@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliBridge AI - Intelligent Chat Interface</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>IntelliBridge AI</h1>
+            </div>
+            <div class="status">
+                <span class="status-dot"></span>
+                <span class="status-text">Online</span>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message animate__animated animate__fadeIn">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! How can I assist you today?</p>
+                    <span class="timestamp">Just now</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="input-wrapper">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Type your message here..."
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
